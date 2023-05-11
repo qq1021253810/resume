@@ -274,7 +274,7 @@ export const Page: React.FC = () => {
             <Resume
               value={config}
               theme={theme}
-              template={query.template || 'template1'}
+              template={query.template || 'template3'}
             />
           )}
           {mode === 'edit' && (
