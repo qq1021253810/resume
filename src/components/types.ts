@@ -66,6 +66,8 @@ export type ResumeConfig = {
     project_role: string;
     /** 描述 */
     project_desc?: string;
+    /** 技术架构 */
+    project_tech?: string;
     /** 项目内容，负责内容 */
     project_content?: string;
     /** 项目时间 */

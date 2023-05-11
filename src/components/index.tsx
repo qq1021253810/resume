@@ -187,7 +187,7 @@ export const Page: React.FC = () => {
           }
           message.success(intl.formatMessage({ id: '上传配置已应用' }));
         } catch (err) {
-          message.error(intl.formatMessage({ id: '上传文件有误，请重新上传' }));
+          //message.error(intl.formatMessage({ id: '上传文件有误，请重新上传' }));
         }
       };
       reader.readAsText(file);

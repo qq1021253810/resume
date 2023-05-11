@@ -356,6 +356,12 @@ export const Template3: React.FC<Props> = props => {
                       </div>
                       <div className="section-detail">
                         <b>
+                          <FormattedMessage id="技术架构" />：
+                        </b>
+                        <span>{project.project_tech}</span>
+                      </div>
+                      <div className="section-detail">
+                        <b>
                           <FormattedMessage id="主要工作" />：
                         </b>
                         <span className="project-content">

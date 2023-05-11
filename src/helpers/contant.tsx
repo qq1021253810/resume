@@ -219,6 +219,12 @@ export const CONTENT_OF_MODULE = ({ intl }) => {
       },
       {
         type: 'textArea',
+        attributeId: 'project_tech',
+        displayName: intl.formatMessage({ id: '技术架构' }),
+        cfg: { autoSize: { minRows: 8 }, showCount: true },
+      },
+      {
+        type: 'textArea',
         attributeId: 'project_content',
         displayName: intl.formatMessage({ id: '主要工作' }),
         cfg: {

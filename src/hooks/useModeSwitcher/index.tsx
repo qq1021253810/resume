@@ -20,6 +20,7 @@ export const useModeSwitcher = ({
   const query = getSearchObj();
 
   const changeMode = value => {
+    debugger;
     if (value === mode) return;
     const {
       pathname,
@@ -44,18 +45,11 @@ export const useModeSwitcher = ({
           <FormattedMessage id="编辑" />
         </span>
       )}
-      {mode === 'edit' &&
-        (canPreview ? (
-          <Popover content={<FormattedMessage id="无用户信息，不允许预览" />}>
-            <span>
-              <FormattedMessage id="预览" />
-            </span>
-          </Popover>
-        ) : (
-          <span className={cx('mode-item')} onClick={() => changeMode('read')}>
-            <FormattedMessage id="预览" />
-          </span>
-        ))}
+      {mode === 'edit' && (
+        <span className={cx('mode-item')} onClick={() => changeMode('read')}>
+          <FormattedMessage id="预览" />
+        </span>
+      )}
     </div>,
     mode,
     changeMode,
